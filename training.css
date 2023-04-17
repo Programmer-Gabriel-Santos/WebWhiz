@@ -1,0 +1,41 @@
+#training-page {
+  display: flex;
+  width: 100vw;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+  gap: 1vw;
+  background: linear-gradient(to bottom right, #b25a02 0%, #b25a02 50%, #ffffff 50%, #ffffff 100%);
+  height: 100vh;
+}
+
+#certificate {
+  width: 60vw;
+  height: 70vh;
+  background-size: cover;
+  background-position: center;
+  box-shadow: 6px 6px 10px rgb(132, 113, 119);
+  border-radius: 5px;
+}
+
+@media screen and (max-width: 768px) {
+  #training-page {
+    display: flex;
+    width: 100vw;
+    height: 86vh;
+    justify-content: center;
+    align-items: center;
+    gap: 1vw;
+    background: linear-gradient(to bottom right, #b25a02 0%, #b25a02 50%, #ffffff 50%, #ffffff 100%);
+    height: 100vh;
+  }
+
+  #certificate {
+    width: 80vw;
+    height: 90vw;
+    background-size: cover;
+    background-position: center;
+    box-shadow: 6px 6px 10px rgb(132, 113, 119);
+    border-radius: 5px;
+  }
+}

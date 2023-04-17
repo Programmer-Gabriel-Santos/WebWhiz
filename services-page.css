@@ -1,0 +1,252 @@
+#services-page {
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    gap: 1vw;
+    background-color: rgb(202, 204, 222);
+}
+
+.introduction{
+    width: 38vw;
+    height: 72vh;
+    margin-bottom: 0vh;
+}
+
+.introduction h3{
+    font-size: 3.8vw;
+    font-weight: 900;
+    color: rgb(1, 148, 254);
+    text-shadow: 3px 3px 6px rgba(0, 0, 0,2);
+}
+
+.introduction p{
+    margin-top: 6vh;
+    font-weight: 600;
+    font-size: 2vw;
+    color: rgb(1, 148, 254);
+    text-shadow: 1px 1px 1.5px rgba(0, 0, 0, 0.6);
+}
+
+.whats{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding-top: 2vh;
+}
+
+.whats img{
+    width: 4vw;
+}
+
+.whats:hover{
+    scale: 1.2;
+}
+
+.services-list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 31vw;
+    height: 80vh;
+    overflow-x: auto;
+    column-gap: 4em;
+    white-space: nowrap;
+    scroll-snap-type: x mandatory;
+    -webkit-overflow-scrolling: touch;
+    padding-left: 0.5vw;
+    padding-right: 0.5vw;
+
+}
+
+.services-list {
+    scrollbar-width: thin;
+    scrollbar-color: black transparent;
+}
+
+.services-list::-webkit-scrollbar {
+    width: 3px;
+    height: 12px;
+}
+
+.services-list::-webkit-scrollbar-track {
+    background: transparent;
+    padding: 2px;
+}
+
+.services-list::-webkit-scrollbar-thumb {
+    background-color: #342f2f;
+    border-radius: 10px;
+}
+
+.service {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    gap: 6vh;
+    width: 30vw;
+    height: 75vh;
+    padding: 1vw;
+    background-color: rgba(15, 24, 149, 0.229);
+    box-shadow: 10px 10px 10px rgba(132, 113, 119, 0.842);
+    border-radius: 10px;
+    white-space: nowrap;
+    scroll-snap-align: center;
+}
+
+.service-name {
+    font-size: 2.4vw;
+    font-weight: 600;
+    text-shadow: 4px 4px 6px rgba(0, 0, 0, 0.9);
+}
+
+.subtypes {
+    display: flex;
+    flex-direction: column;
+    gap: 2vh;
+    align-items: start;
+    width: 70%;
+    height: 75%;
+    font-size: 1.6vw;
+}
+
+.subtypes li{
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 20vw;
+}
+
+@media screen and (max-width: 768px) {
+    #services-page {
+        display: flex;
+        flex-direction: column;
+        width: 100vw;
+        height: 100vh;
+        /* justify-content: center; */
+        /* align-items: center; */
+        /* gap: 1vw; */
+        background-color: rgb(202, 204, 222);
+    }
+    
+    .introduction{
+        display: flex;
+        flex-direction: column;
+        /* justify-content: center; */
+        /* align-items: center; */
+        width: 58vw;
+        height: 36vh;
+        margin-top: 10vh;
+        margin-bottom: 1vh;
+        gap: 1vh;
+    }
+    
+    .introduction h3{
+        font-size: 6vw;
+        font-weight: 900;
+        color: rgb(1, 148, 254);
+        text-shadow: 3px 3px 6px rgba(0, 0, 0,2);
+    }
+    
+    .introduction p{
+        margin-top: 2vh;
+        font-weight: 600;
+        font-size: 3vw;
+        color: rgb(1, 148, 254);
+        text-shadow: 1px 1px 1.5px rgba(0, 0, 0, 0.6);
+    }
+
+    .whats{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+    }
+    
+    .whats img{
+        width: 6vw;
+    }
+
+    .services-list {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        flex-wrap: wrap;
+        justify-content: center;
+        width: 74vw;
+        height: 70vh;
+        overflow-x: auto;
+        column-gap: 3em;
+        white-space: nowrap;
+        scroll-snap-type: x mandatory;
+        -webkit-overflow-scrolling: touch;
+        padding-left: 0.5vw;
+        padding-right: 0.5vw;
+        margin-bottom: 8vh;
+    }
+    
+    .services-list {
+        scrollbar-width: thin;
+        scrollbar-color:  black transparent;
+    }
+    
+    .services-list::-webkit-scrollbar {
+        width: 3px;
+        height: 4px;
+    }
+    
+    .services-list::-webkit-scrollbar-track {
+        background: transparent;
+        padding: 2px;
+    }
+    
+    .services-list::-webkit-scrollbar-thumb {
+        background-color: #342f2f;
+        border-radius: 10px;
+    }
+    
+    .service {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        /* text-align: center; */
+        gap: 6vh;
+        width: 70vw;
+        height: 70vh;
+        padding: 1vw;
+        background-color: rgba(15, 24, 149, 0.229);
+        box-shadow: 10px 10px 10px rgba(132, 113, 119, 0.842);
+        border-radius: 10px;
+        white-space: nowrap;
+        scroll-snap-align: center;
+    }
+    
+    .service-name {
+        margin-top: 2vh;
+        font-size: 5vw;
+        font-weight: 600;
+        text-shadow: 4px 4px 6px rgba(0, 0, 0, 0.9);
+    }
+    
+    .subtypes {
+        display: flex;
+        flex-direction: column;
+        /* justify-items: center; */
+        /* justify-content: center; */
+        gap: 2vh;
+        align-items: center;
+        width: 70%;
+        height: 75%;
+        font-size: 3vw;
+    }
+    
+    .subtypes li{
+        display: flex;
+        justify-content: start;
+        flex-wrap: wrap;
+        max-width: 20vw;
+    }
+}

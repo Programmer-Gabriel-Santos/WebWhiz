@@ -1,0 +1,262 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    text-decoration: none;
+    list-style: none;
+    outline: none;
+    color: #fff;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+body {
+    scrollbar-width: none;
+    gap: 2em;
+}
+
+body::-webkit-scrollbar {
+    display: none;
+}
+
+
+header {
+    display: flex;
+    justify-content: space-between;
+    position: fixed;
+    width: 100vw;
+    height: 6vh;
+    background-color: #000;
+    /* border-bottom: #776e6e solid 2px; */
+    align-items: center;
+    z-index: 10;
+}
+
+#logo{
+    width: 5vw;
+    border-radius: 10%;
+    padding: 2px;
+    margin-left: 20vw;
+}
+
+header h1 {
+    color: #fff;
+    padding: 1vw;
+}
+
+
+.social ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1em;
+    gap: 1em;
+    margin-right: 15vw;
+}
+
+.social ul>li {
+    font-size: 1.6em;
+}
+
+.social ul>li>a:hover {
+    padding: 0.2em;
+    outline: none;
+    background-color: rgb(64, 64, 102);
+    border-radius: 5%;
+}
+
+#email {
+    width: 1em;
+}
+
+#active-bar{
+    display: none;
+}
+
+.nav-bar {
+    display: flexbox;
+    position: fixed;
+    box-sizing: border-box;
+    width: 6.5vw;
+    height: 54vh;
+    margin-top: 22vh;
+    margin-left: 1.2vw;
+    box-shadow: 4px 4px 4px rgba(176, 178, 192, 0.5);
+    border-radius: 5%;
+    background-color: #000;
+}
+
+.menu-bar {
+    display: flex;
+    height: 48vh;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 4vh;
+    gap: 2vh;
+    font-size: 1.2vw;
+}
+
+.menu-bar li {
+    color: #fff;
+}
+
+.menu-bar li:hover {
+    scale: 1.1;
+}
+
+#rendler-tec{
+    border: none;
+    background-color: transparent;
+    font-size: 1.2vw;
+}
+
+#rendler-tec:hover {
+    scale: 1.1;
+}
+
+main {
+    display: flexbox;
+    justify-content: center;
+    width: 100vw;
+    height: auto;
+    position: absolute;
+    scroll-snap-align: center;
+}
+
+#tec-container {
+    display: none;
+    position: fixed;
+    justify-content: center;
+    background-color: #000;
+    z-index: 10;
+    width: 100vw;
+    height: 4vh;
+    margin-top: 6vh;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.tecnologes {
+    display: flex;
+    height: auto;
+    width: 60vw;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.tecnologes li i {
+    font-size: 1.5em;
+}
+
+.tecnologes li img {
+    width: 1.5em;
+    border-radius: 50%;
+}
+
+@media screen and (max-width: 768px) {
+
+    header {
+        display: flex;
+        justify-content: space-between;
+        position: fixed;
+        width: 100vw;
+        height: 6vh;
+        background-color: #000;
+        border-bottom: #776e6e solid 2px;
+        align-items: center;
+        z-index: 10;
+    }
+
+    #logo{
+        width: 15vw;
+        border-radius: 10%;
+        padding: 2px;
+        margin-left: 8vw;
+    }
+
+    header h1 {
+        font-size: 5vw;
+        color: #fff;
+        margin-left: 5vw;
+    }
+
+
+    .social ul {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 2vw;
+        gap: 4vw;
+        margin-right: 5vw;
+    }
+
+    .social ul>li {
+        font-size: 7vw;
+    }
+
+    .nav-bar {
+        display:  none;
+        position: fixed;
+        box-sizing: border-box;
+        width:14vw;
+        height: 40vh;
+        margin-top: 16vh;
+        /* margin-left: 1.2vw; */
+        box-shadow: 4px 4px 4px rgba(176, 178, 192, 0.5);
+        border-radius: 5%;
+        background-color: #000;
+    }
+    
+    .menu-bar {
+        display: flex;
+        height: 38vh;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        padding-top: 2vh;
+        font-size: 2.5vw;
+    }
+    
+    .menu-bar li {
+        color: #fff;
+    }
+
+    #rendler-tec{
+        border: none;
+        background-color: transparent;
+        font-size: 2.5vw;
+    }
+    
+    #tec-container {
+        display: none;
+        position: fixed;
+        justify-content: center;
+        background-color: #000;
+        z-index: 10;
+        width: 100vw;
+        height: 4vh;
+        margin-top: 6vh;
+        align-items: center;
+        /* flex-wrap: wrap; */
+    }
+    
+    .tecnologes {
+        display: flex;
+        height: auto;
+        width: 100vw;
+        justify-content: space-between;
+        align-items: center;
+        padding: 5px;
+    }
+    
+    .tecnologes li i {
+        font-size: 6vw;
+    }
+    
+    .tecnologes li img {
+        width: 6vw;
+        border-radius: 50%;
+    }
+}

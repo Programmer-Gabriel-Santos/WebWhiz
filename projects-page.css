@@ -1,0 +1,146 @@
+.projects-page {
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(26, 26, 41, 0.744);
+}
+
+.projects {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: auto;
+    flex-wrap: wrap;
+    width: 70vw;
+    height: 70%;
+    background-color: rgba(225, 216, 216, 0.724);
+    row-gap: 2em;
+    column-gap: 2em;
+    margin-top: 2vh;
+    margin-bottom: 3vh;
+    padding: 2em 0 2em 0;
+    border-radius: 5px;
+}
+
+.projects li {
+    width: 30vw;
+    height: 26vh;
+    color: rgba(255, 255, 255, 0.131);
+    background-color: rgba(14, 14, 22, 0.926);
+    padding: 1em;
+    box-shadow: 10px 10px 10px rgba(132, 113, 119, 0.842);
+    border-radius: 5px;
+}
+
+.projects li:hover {
+    scale: 1.1;
+}
+
+.promobit{
+    background-image: url("images/the-movie.png");
+    background-size: cover;
+    background-position: center;
+}
+
+.promobit h2{
+    width: 6.4vw;
+    background-color: rgb(245, 245, 247);
+    color: black;
+    border-radius: 5%;
+}
+
+.labe-food{
+    background-image: url("images/labe-food.jpg");
+    background-size: cover;
+}
+
+.labe-food h2{
+    width: 6vw;
+    background-color: rgb(245, 245, 247);
+    color: black;
+    border-radius: 5%;
+}
+
+.crawler{
+    background-image: url("images/crawler.png");
+    background-size: cover;
+}
+
+.crawler h2{
+    width: 8.6vw;
+    background-color: rgb(245, 245, 247);
+    color: black;
+    border-radius: 5%;
+}
+
+.lama{
+    background-image: url("images/Lama.png");
+    background-size: cover;
+}
+
+.lama h2{
+    padding: 5px;
+    width: 4vw;
+    background-color: rgb(245, 245, 247);
+    color: black;
+    border-radius: 5%;
+}
+
+.stockkeeper{
+    background-image: url("images/StockKeeper-Docker.png");
+    background-size: cover;
+}
+
+.stockkeeper h2{
+    width: 8.6vw;
+    background-color: rgb(245, 245, 247);
+    color: black;
+    border-radius: 5%;
+}
+
+.labook{
+    background-image: url("images/labook.png");
+    background-size: cover;
+}
+
+.labook h2{
+    width: 5vw;
+    padding: 5px;
+    background-color: rgb(245, 245, 247);
+    color: black;
+    border-radius: 5%;
+}
+
+@media screen and (max-width: 768px) {
+    .projects {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        overflow: auto;
+        flex-wrap: wrap;
+        width: 80vw;
+        height: 70%;
+        background-color: rgba(225, 216, 216, 0.724);
+        row-gap: 2em;
+        column-gap: 2em;
+        margin-bottom: 3vh;
+        padding: 2em 0 2em 0;
+        border-radius: 5px;
+    }
+    
+    .projects li {
+        width: 54vw;
+        height: 26vh;
+        color: rgba(255, 255, 255, 0.131);
+        background-color: rgba(14, 14, 22, 0.926);
+        padding: 1em;
+        box-shadow: 10px 10px 10px rgba(132, 113, 119, 0.842);
+        border-radius: 5px;
+    }
+    
+    .projects li > h2{
+        display: none;
+    }
+}
