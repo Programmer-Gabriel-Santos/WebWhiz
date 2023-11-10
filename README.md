@@ -1,4 +1,4 @@
-# WebWise
+# WebWhiz
 
 ### Este é meu portifólio, que leva o nome de WebWhiz. O nome WebWhiz foi escolhido porque "Whiz" significa especialista, e esse é meu objetivo, ser especialista em desenvolvimento de software.
 
